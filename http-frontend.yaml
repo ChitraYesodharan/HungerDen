@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: http-frontend
+spec:
+  selector:
+    matchLabels:
+      app: http-frontend
+  template:
+    metadata:
+      labels:
+        app: http-frontend
+    spec:
+      containers:
+      - name: http-frontend
+        image: <Image>
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80

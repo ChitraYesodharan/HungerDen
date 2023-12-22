@@ -1,0 +1,12 @@
+{
+    "apiVersion": "v1",
+    "kind": "Binding",
+    "metadata": {
+      "name": "myapp-deployment-c74bbf696-zg7tn"
+    },
+    "target": {
+      "apiVersion": "v1",
+      "kind": "Node",
+      "name": "minikube"
+    }
+  }
