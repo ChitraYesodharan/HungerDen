@@ -4,5 +4,8 @@ metadata:
   name: storage-admin
 rules:
 - apiGroups: [""]
-  resources: ["nodes"]
+  resources: ["persistentvolumes"]
+  verbs: ["list", "get", "create", "delete"]
+- apiGroups: [""]
+  resources: ["storageclasses"]
   verbs: ["list", "get", "create", "delete"]
